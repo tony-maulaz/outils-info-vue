@@ -1,0 +1,19 @@
+services:
+  node:
+    image: node
+    build: .
+    container_name: dev-vue
+    volumes:
+      - ./code:/code
+    
+    tty: true
+    stdin_open: true
+    
+    restart: "no"
+    
+    working_dir: /code
+    command: ["bash"]
+
+    ports:
+      - 3000:3000
+      - 8000:8000
