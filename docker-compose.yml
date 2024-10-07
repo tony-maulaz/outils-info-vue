@@ -4,14 +4,14 @@ services:
     build: .
     container_name: dev-vue
     volumes:
-      - ./code:/code
+      - ./project:/project
     
     tty: true
     stdin_open: true
     
     restart: "no"
     
-    working_dir: /code
+    working_dir: /project
     command: ["bash"]
 
     ports:
