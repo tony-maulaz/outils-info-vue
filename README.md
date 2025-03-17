@@ -11,8 +11,7 @@
 
 ## Démarrer le serveur (A faire à chaque fois)
 - Démarrer le conteneur Docker : `docker-compose up -d`
-- Se connecter au conteneur web : `docker exec -it vue_intro bash`
-
+- Se connecter au conteneur web : `docker exec -it dev-vue bash`
 
 ## Pour développer avec Vue
 - Une fois dans le conteneur web

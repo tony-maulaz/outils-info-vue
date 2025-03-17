@@ -1,9 +1,17 @@
 import { defineConfig } from 'vite'
+import { createHtmlPlugin } from 'vite-plugin-html'
+import vueDevTools from 'vite-plugin-vue-devtools'
 import vue from '@vitejs/plugin-vue'
+import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(), 
+    vuetify(),
+    vueDevTools(),
+    createHtmlPlugin({})
+  ],
   server: {
     host: '0.0.0.0',
     port: 8000,
